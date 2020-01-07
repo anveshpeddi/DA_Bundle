@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfSystemApplicationInfo
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<SystemApplicationInfo>
+		<FileName>DataAdapter.zip</FileName>
+		<FileVersion>1.24.0</FileVersion>
+		<FileChecksum>ec4a9bf90f959e20f10238af45c7671c</FileChecksum>
+		<FileSize>19374850</FileSize>
+		<DownloadUri>files/DataAdapter.zip</DownloadUri>
+
+		<nddsjavaChecksum>8331536222dc37a0fa9a81d86f34a60e</nddsjavaChecksum>
+		<nddscChecksum>6a2f5469bd1bee80cca9d3cf8b5c1831</nddscChecksum>
+		<nddscoreChecksum>c8aa782ad3aa014bbd244d7a7e1e82e3</nddscoreChecksum>
+		<nddstransporttcpChecksum>c07a18332927b0e2a560949ec7b71633</nddstransporttcpChecksum>
+
+		<nddsjavaChecksum64>72707cd206ae544bd186d3dd8761b0df</nddsjavaChecksum64>
+		<nddscChecksum64>26b718b31de72fea3df36e2b5d33f68b</nddscChecksum64>
+		<nddscoreChecksum64>50670c6ba4fa32ffea6972ddd8530e74</nddscoreChecksum64>
+		<nddstransporttcpChecksum64>a98539b5059adccc5cd7a1aefb263d2a</nddstransporttcpChecksum64>
+	</SystemApplicationInfo>
+
+</ArrayOfSystemApplicationInfo>

@@ -1,0 +1,50 @@
+<!-- RTI Data Distribution Service QoS Profiles FaceBoss 11 QoS settings -->
+<dds>
+
+    <!-- Qos library for Topic Qoses only -->
+    <!-- Edit the Qos-es in here if system-wide changes need to be made to Topic 
+    Qos-es. -->
+    <qos_library name="FB20DataAdapter">
+        <qos_profile name="Configuration" base_name="FB20Qoses::Configuration">
+            <datareader_qos>
+                <reader_resource_limits>
+                    <max_samples_per_read>5000</max_samples_per_read>
+                </reader_resource_limits>
+            </datareader_qos>
+            <datawriter_qos>
+            </datawriter_qos>
+        </qos_profile>
+        <qos_profile name="IncidentSingle" base_name="FB20Qoses::Configuration">
+            <datareader_qos>
+                <history>
+                    <kind>KEEP_LAST_HISTORY_QOS</kind>
+                    <depth>10</depth>
+                </history>            
+            </datareader_qos>
+        </qos_profile>		
+		<qos_profile name="LargeAsync" base_name="FB20Qoses::LargeAsync"/>
+        <participant_qos name="FB20DATCP" base_name="FB20ParticipantQoses::TCP_Default">
+            <participant_name>
+                <name>DA_TCP_Participant</name>
+                <role_name>DA_TCP_Participant_Role</role_name>
+            </participant_name>
+            <discovery>
+				<initial_peers>
+					<element>tcpv4_wan://160.212.54.34:80</element>
+				</initial_peers>
+			</discovery>
+			<property>
+				<value>
+					<element>
+						<name>dds.transport.TCPv4.tcp1.public_address</name>
+						<value>0.0.0.0</value>
+					</element>
+					<element>
+						<name>dds.transport.TCPv4.tcp1.server_bind_port</name>
+						<value>0</value>
+					</element>
+				</value>
+            </property>
+        </participant_qos>
+    </qos_library>
+</dds>
